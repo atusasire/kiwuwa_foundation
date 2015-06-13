@@ -1,0 +1,108 @@
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: orange;
+    color: red;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a .active {
+    background-color: orange;
+    color: red;
+}
+
+.navbar-default{
+	 background-color: #efefef;
+	 box-shadow: 10px 10px 5px #888888;
+}
+.navbar-default .navbar-nav > li > a{
+	 background-color: #efefef;
+	 color: orange;
+}
+
+
+.navbar-brand{
+	text-shadow: 3px 3px #fffeee, 0 0 5px #fffeee;
+	font-weight: bold;
+	font-size: 30px;
+	position: relative;
+    -webkit-animation: mymove 10s infinite; /* Chrome, Safari+ri, Opera */
+    animation: mymove 10s infinite;	
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 100px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100px}
+}
+#example ul
+{
+width: 390px;
+margin: 0 auto;
+height: 115px;
+position: relative;
+overflow: hidden;
+}
+
+.carousel-inner .active.left  { left: -1%;             }
+.carousel-inner .active.right { left: 1%;              }
+.carousel-inner .next         { left: 1%               }
+.carousel-inner .prev         { left: -1%              }
+.carousel-control.left        { background-image: none; }
+.carousel-control.right       { background-image: none; }
+.carousel-inner .item         { background: white;      }
+
+.jumbotron {
+  padding: 8px;
+  background-color: transparent; 
+}
+
+.carousel-caption{
+	color: black;
+	background-color: transparent;
+}
+h2{
+	text-transform: bold;
+}
+.yamm-fw{
+	max-height: 2px;
+}
+h4{
+	text-transform: bold;
+	color: orange;
+	text-shadow: 1px 1px red;
+}
+
+.back{
+	background-color: #fff; 
+	background-image: 
+	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+}
+
+.bg{
+	background: linear-gradient(
+  to bottom,
+  #efefef,
+  #fffeee 50%,
+  #eeefff 50%,
+  #fffeee
+);
+/* The rectangle in which to repeat. 
+   It can be fully wide in this case */
+background-size: 100% 8px;
+}
+.input-group{
+		background: linear-gradient(
+  to bottom,
+  #efefef,
+  #fffeee 50%,
+  #eeefff 50%,
+  #fffeee
+);
+/* The rectangle in which to repeat. 
+   It can be fully wide in this case */
+background-size: 100% 8px;
+}

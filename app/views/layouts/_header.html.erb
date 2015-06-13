@@ -1,0 +1,68 @@
+	 <!-- Demo navbar -->
+    <div class="navbar yamm navbar-default navbar-fixed-top">
+      	<div class="container">
+	        <div class="navbar-header">
+	          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+	          	<span class="icon-bar"></span>
+	          	<span class="icon-bar"></span>
+	          	<span class="icon-bar"></span>
+	          </button>
+	          
+	        </div>
+
+	        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+	          <%= link_to "Kiwuwa Foundation", root_path, :class=>"navbar-brand" %>
+	          <ul class="nav navbar-nav">
+	            <!-- Classic list -->
+	            <li class="active"><%= link_to "", root_path, class: "btn-warning fa fa-lg fa-home" %></li>
+	           
+	            <li class=""><%= link_to "Projects", root_path %></li>
+	            <li class=""><%= link_to "Event", root_path %></li>
+	            <li class=""><%= link_to "Collaborate", root_path %></li>
+	            <li><%= link_to "sign out", destroy_user_session_path, method:"delete" %></li>
+	            <li class="dropdown yamm"><a aria-expanded="false" href="#" data-toggle="dropdown" class="dropdown-toggle">Patners<b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li>
+	                  <!-- Content container to add padding -->
+	                  <div class="yamm-content">
+	                    <div class="row">
+	                      <ul class="col-sm-6 list-unstyled">
+	                        <li>
+	                          <p><strong>Partners</strong></p>
+	                        </li>
+	                      </ul>
+	                      <ul class="col-sm-6 list-unstyled">
+	                        <li>
+	                          <p><strong>Sponsers</strong></p>
+	                        </li>
+	                      </ul>
+	                    </div>
+	                  </div>
+	                </li>
+	              </ul>
+	            </li>
+	           
+	           
+	            <li class="dropdown yamm-fw"><a aria-expanded="false" href="#" data-toggle="dropdown" class="dropdown-toggle">Pictures<b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li>
+	                  <div class="yamm-content">
+	                    <div class="row">
+	                      <div class="col-xs-6 col-sm-2"><a href="#" class=""></a></div>
+	                      <div class="col-xs-6 col-sm-2"><a href="#" class=""></div>
+	                      <div class="col-xs-6 col-sm-2"><a href="#" class=""><img alt="150x190" src="Yamm%213%20Megamenu%20for%20Bootstrap3_files/190.jpg"></a></div>
+	                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="Yamm%213%20Megamenu%20for%20Bootstrap3_files/190.jpg"></a></div>
+	                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="Yamm%213%20Megamenu%20for%20Bootstrap3_files/190.jpg"></a></div>
+	                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="Yamm%213%20Megamenu%20for%20Bootstrap3_files/190.jpg"></a></div>
+	                    </div>
+	                  </div>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	        </div>
+      	</div>
+    </div>  	
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+	

@@ -1,0 +1,40 @@
+<div class="container-fluid"> 
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    /* * * CONFIGURATION VARIABLES * * */
+	    var disqus_shortname = 'kiwuwafoundation';
+	    
+	    /* * * DON'T EDIT BELOW THIS LINE * * */
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript> <a href="https://disqus.com/?ref_noscript" rel="nofollow"></a></noscript>
+	</div>
+
+	<<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
+		$('#myCarousel').carousel({
+    		interval: 1000
+		})
+
+		$('.carousel .item').each(function(){
+		    var next = $(this).next();
+
+		    if (!next.length) {
+		        next = $(this).siblings(':first');
+		    }
+
+		    next.children(':first-child').clone().appendTo($(this));
+
+		    if (next.next().length>0) {
+		        next.next().children(':first-child').clone().appendTo($(this));
+		    }
+		    else {
+		        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+		    }
+		});
+	</script>
+	<!-- closes container-fluid -->
+</div>
